@@ -1,7 +1,7 @@
 import { rapidSearch } from './rapid-search'
 import { authorize } from './authorize'
 import { multiInfo, ExampleMultiInfoResponse } from './multi-info'
-import dayjs from 'dayjs'
+import * as dayjs from 'dayjs'
 
 export interface OptenOptions {
   username: string
