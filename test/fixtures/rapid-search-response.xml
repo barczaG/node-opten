@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+  xmlns:ns1="urn://opten/soap/cegtar/unique">
+  <SOAP-ENV:Body>
+    <ns1:RapidSearchResponse>
+      <ns1:keresett>hello</ns1:keresett>
+      <ns1:Lista>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLO-HELLO Kereskedelmi Korlátolt Felelősségű Társaság</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>8500</ns1:Zip>
+            <ns1:City>Pápa</ns1:City>
+            <ns1:StreetAndNum>Szabadság út 1/A. 173/14. hrsz.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>19 09 517860</ns1:RegNumber>
+          <ns1:ShortTaxNumber>25304655</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLÓ 2000 Kereskedelmi Betéti Társaság "felszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>3529</ns1:Zip>
+            <ns1:City>Miskolc</ns1:City>
+            <ns1:StreetAndNum>Középszer út 76. 2. em. 1.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>05 06 009783</ns1:RegNumber>
+          <ns1:ShortTaxNumber>20311797</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLÓ 8200. Elektronikai Eszközöket Forgalmazó és Javító Betéti Társaság "kényszertörlés alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>8192</ns1:Zip>
+            <ns1:City>Hajmáskér</ns1:City>
+            <ns1:StreetAndNum>Tábori utca 117.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>19 06 001055</ns1:RegNumber>
+          <ns1:ShortTaxNumber>27213494</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLO 2002. Ipari, kereskedelmi és Szolgáltató Betéti Társaság "végelszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>8400</ns1:Zip>
+            <ns1:City>Ajka</ns1:City>
+            <ns1:StreetAndNum>Újélet utca 27. 3. em. 10.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>19 06 506927</ns1:RegNumber>
+          <ns1:ShortTaxNumber>21479050</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLO-MEN Szolgáltató Betéti Társaság "felszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>5667</ns1:Zip>
+            <ns1:City>Magyarbánhegyes</ns1:City>
+            <ns1:StreetAndNum>Alkotmány u. 36/A.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>04 06 007244</ns1:RegNumber>
+          <ns1:ShortTaxNumber>21452938</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>Helló- design Kereskedelmi és Szolgáltató Betéti Társaság</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>5130</ns1:Zip>
+            <ns1:City>Jászapáti</ns1:City>
+            <ns1:StreetAndNum>Széchenyi utca 15.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>16 06 009346</ns1:RegNumber>
+          <ns1:ShortTaxNumber>28921448</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLO-MANNA Élelmiszeripari Nagykereskedelmi Korlátolt Felelősségű Társaság "felszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>3300</ns1:Zip>
+            <ns1:City>Eger</ns1:City>
+            <ns1:StreetAndNum>Barkóczy út 10.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>10 09 028495</ns1:RegNumber>
+          <ns1:ShortTaxNumber>14385654</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>Helló 2000 Nyelviskola Betéti Társaság " végelszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>1157</ns1:Zip>
+            <ns1:City>Budapest</ns1:City>
+            <ns1:StreetAndNum>Kőrakás park 36. III/19</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>01 06 417022</ns1:RegNumber>
+          <ns1:ShortTaxNumber>28614317</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>Hello-Baby Hungary Betéti Társaság</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>1116</ns1:Zip>
+            <ns1:City>Budapest</ns1:City>
+            <ns1:StreetAndNum>Fegyvernek utca 6-8. IX. em. 97.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>01 06 790221</ns1:RegNumber>
+          <ns1:ShortTaxNumber>25444115</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+        <ns1:RapidSearchResponseItem>
+          <ns1:Name>HELLO-GÖRBE Korlátolt Felelősségű Társaság "felszámolás alatt"</ns1:Name>
+          <ns1:Address>
+            <ns1:Zip>5350</ns1:Zip>
+            <ns1:City>Tiszafüred</ns1:City>
+            <ns1:StreetAndNum>Görbe utca 10.</ns1:StreetAndNum>
+          </ns1:Address>
+          <ns1:RegNumber>16 09 016338</ns1:RegNumber>
+          <ns1:ShortTaxNumber>25309241</ns1:ShortTaxNumber>
+        </ns1:RapidSearchResponseItem>
+      </ns1:Lista>
+    </ns1:RapidSearchResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

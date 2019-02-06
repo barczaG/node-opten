@@ -1,0 +1,37 @@
+{
+  "name": "opten",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "npm run test:dev",
+    "test:dev": "npm run test:no-spec | tap-spec",
+    "test:no-spec": "NODE_ENV=test ts-node --files node_modules/tape/bin/tape test/**/*.test.ts",
+    "build": "npx typescript --project tsconfig.build.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/blue-tape": "^0.1.32",
+    "@types/dot": "^1.1.2",
+    "@types/node": "^10.12.20",
+    "@types/sinon": "^7.0.5",
+    "@types/xml2js": "^0.4.3",
+    "blue-tape": "^1.0.0",
+    "sinon": "^7.2.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2",
+    "ts-node": "^8.0.2",
+    "typedoc": "^0.14.2",
+    "typescript": "3.1.6"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dayjs": "^1.8.2",
+    "dot": "^1.1.2",
+    "xml2js": "^0.4.19"
+  }
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+  xmlns:ns1="urn://opten/soap/cegtar/unique">
+  <SOAP-ENV:Body>
+    <ns1:MultiInfoResponse>
+      <ns1:MultiInfo id="23044441">
+        <ns1:Rovatok>
+          <ns1:Rovat rovatszam="49" megnevezes="A cég cégjegyzékszámai">
+            <ns1:Alrovat alrovatszam="1" hatalyos="true">
+              <ns1:Ertek>01 01 111111
+Vezetve a(z) Fővárosi Törvényszék Cégbírósága nyilvántartásában.
+Bejegyzés kelte: 2010.11.25.</ns1:Ertek>
+              <ns1:HatalyosTol>2010-11-25</ns1:HatalyosTol>
+            </ns1:Alrovat>
+          </ns1:Rovat>
+        </ns1:Rovatok>
+        <ns1:ScoringAdatok>
+          <ns1:XData tipus="55" megnevezes="Cég email címe(i)">
+            <ns1:Value num="1" subtype="xstring">test@test.hu</ns1:Value>
+          </ns1:XData>
+          <ns1:XData tipus="61" megnevezes="Cégjegyzésre jogosult(ak)">
+            <ns1:Value num="1" subtype="xstring">Test László (Test Anna)</ns1:Value>
+            <ns1:Value num="2" subtype="xstring">ügyvezető</ns1:Value>
+          </ns1:XData>
+        </ns1:ScoringAdatok>
+        <ns1:MerlegAdatok/>
+        <ns1:ExtendData>
+          <ns1:CEGELNEVEZESE rovatszam="2" megnevezes="A cég elnevezése">
+            <ns1:NEVALROVAT alrovatszam="2" hatalyos="true">
+              <ns1:MEGNEVEZES>
+                <ns1:valtozas>
+                  <ns1:kezdet>2018.07.25.</ns1:kezdet>
+                </ns1:valtozas>
+                <ns1:bejegyzes>
+                  <ns1:kezdet>2018.08.08.</ns1:kezdet>
+                </ns1:bejegyzes>
+                <ns1:nev>Test Ceg Korlátolt Felelősségű Társaság</ns1:nev>
+              </ns1:MEGNEVEZES>
+              <ns1:HATALY>
+                <ns1:KEZDETE>2018-07-25</ns1:KEZDETE>
+              </ns1:HATALY>
+            </ns1:NEVALROVAT>
+          </ns1:CEGELNEVEZESE>
+          <ns1:CEGSZEKHELYE rovatszam="5" megnevezes="A cég székhelye">
+            <ns1:CIMALROVAT alrovatszam="1" hatalyos="true">
+              <ns1:MEGNEVEZES>
+                <ns1:bejegyzes>
+                  <ns1:kezdet>2010.11.25.</ns1:kezdet>
+                </ns1:bejegyzes>
+                <ns1:CIM>
+                  <ns1:cim_iranyitoszam>1111</ns1:cim_iranyitoszam>
+                  <ns1:cim_varos>Budapest</ns1:cim_varos>
+                  <ns1:cim_utca>Test</ns1:cim_utca>
+                  <ns1:cim_kterjell>utca</ns1:cim_kterjell>
+                  <ns1:cim_hsz>42</ns1:cim_hsz>
+                </ns1:CIM>
+              </ns1:MEGNEVEZES>
+              <ns1:HATALY>
+                <ns1:KEZDETE>2010-11-25</ns1:KEZDETE>
+              </ns1:HATALY>
+            </ns1:CIMALROVAT>
+          </ns1:CEGSZEKHELYE>
+          <ns1:ADOSZAM rovatszam="21" megnevezes="A cég adószáma">
+            <ns1:ADOSZAMALROVAT alrovatszam="2" hatalyos="true">
+              <ns1:ADOSZAM>
+                <ns1:magyar_adoszam>11111111-2-42</ns1:magyar_adoszam>
+                <ns1:kozossegi_adoszam>HU11111111</ns1:kozossegi_adoszam>
+                <ns1:adoszam_statusza>érvényes adószám</ns1:adoszam_statusza>
+                <ns1:adoszam_statusz_kezdet>20101125</ns1:adoszam_statusz_kezdet>
+                <ns1:valtozas>
+                  <ns1:kezdet>2010.11.25.</ns1:kezdet>
+                </ns1:valtozas>
+                <ns1:bejegyzes>
+                  <ns1:kezdet>2012.05.03.</ns1:kezdet>
+                </ns1:bejegyzes>
+              </ns1:ADOSZAM>
+              <ns1:HATALY>
+                <ns1:KEZDETE>2010-11-25</ns1:KEZDETE>
+              </ns1:HATALY>
+            </ns1:ADOSZAMALROVAT>
+          </ns1:ADOSZAM>
+        </ns1:ExtendData>
+      </ns1:MultiInfo>
+    </ns1:MultiInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
+  xmlns:ns1="urn://opten/soap/auth">
+  <SOAP-ENV:Body>
+    <ns1:AuthorizationResponse>
+      <ns1:Token>token</ns1:Token>
+    </ns1:AuthorizationResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
