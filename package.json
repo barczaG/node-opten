@@ -10,7 +10,7 @@
     "test": "npm run test:dev",
     "test:dev": "npm run test:no-spec | tap-spec",
     "test:no-spec": "NODE_ENV=test ts-node --files node_modules/tape/bin/tape test/**/*.test.ts",
-    "build": "npx typescript --project tsconfig.build.json"
+    "build": "npx typescript --project tsconfig.build.json && cp -r ./src/xml ./dist/"
   },
   "author": "",
   "license": "ISC",
