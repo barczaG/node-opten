@@ -12,10 +12,12 @@ import rapidSearchFixture from './fixtures/rapid-search.json'
 import { Opten } from '../src'
 import { getMockXML } from './fixtures/util'
 
+const xmlSpy = sinon.spy(xml, 'getXML')
+const requestStub = sinon.stub(request, 'soapRequest')
+
 test('#authorize', async t => {
-  const xmlSpy = sinon.spy(xml, 'getXML')
   const authResp = await getMockXML('authorize-response')
-  const requestStub = sinon.stub(request, 'soapRequest').resolves(authResp)
+  requestStub.resolves(authResp)
 
   const ret = await authorize({
     username: 'myusername',
@@ -28,12 +30,12 @@ test('#authorize', async t => {
 
   t.ok(requestXml.includes('myusername'))
   t.ok(requestXml.includes('omgomgsecret'))
+  xmlSpy.returnValues = []
 })
 
 test('#rapid-search', async t => {
-  const xmlSpy = sinon.spy(xml, 'getXML')
   const mockResp = await getMockXML('rapid-search-response')
-  const requestStub = sinon.stub(request, 'soapRequest').resolves(mockResp)
+  requestStub.resolves(mockResp)
 
   const resp = await rapidSearch('hello', 'token')
 
@@ -50,12 +52,12 @@ test('#rapid-search', async t => {
     regNumber: '19 09 517860',
     shortTaxNumber: '25304655'
   })
+  xmlSpy.returnValues = []
 })
 
 test('#authorize', async t => {
-  const xmlSpy = sinon.spy(xml, 'getXML')
   const mockResp = await getMockXML('multi-info-response')
-  const requestStub = sinon.stub(request, 'soapRequest').resolves(mockResp)
+  requestStub.resolves(mockResp)
 
   const ret = await multiInfo<ExampleMultiInfoResponse>('23044441', 'token')
 
@@ -73,6 +75,7 @@ test('#authorize', async t => {
     ][0]['ns1:ScoringAdatok'][0]['ns1:XData'][1]['ns1:Value'][0]._
   t.equal(ceo, 'Test László (Test Anna)')
   t.equal(email, 'test@test.hu')
+  xmlSpy.returnValues = []
 })
 
 test('#Opten', async t => {

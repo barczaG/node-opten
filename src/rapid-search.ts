@@ -43,8 +43,20 @@ interface Ns1AddressItem {
   'ns1:City': string[]
   'ns1:StreetAndNum': string[]
 }
+interface RapidSearchRetItem {
+  name: string,
+  address: {
+    zip: string,
+    city: string,
+    street: string,
+  },
+  regNumber: string,
+  shortTaxNumber: string,
+}
+export type RapidSearchRet = RapidSearchRetItem[]
 
-export async function rapidSearch(query: string, token?: string) {
+
+export async function rapidSearch(query: string, token?: string): Promise<RapidSearchRet> {
   const xml = await getXML<RapidSearchXML>({
     template: 'rapid-search',
     data: { token, keresett: query }
