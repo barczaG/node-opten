@@ -1,4 +1,4 @@
-import { rapidSearch } from './rapid-search'
+import { rapidSearch, RapidSearchRet } from './rapid-search'
 import { authorize } from './authorize'
 import { multiInfo, ExampleMultiInfoResponse } from './multi-info'
 import * as dayjs from 'dayjs'
@@ -30,13 +30,31 @@ export class Opten {
     return token
   }
 
-  async rapidSearch(query: string) {
+  async rapidSearch(query: string, isRetry = false): Promise<RapidSearchRet> {
     const token = await this.getToken()
-    return rapidSearch(query, token)
+    try {
+      return rapidSearch(query, token)
+    } catch (err) {
+      if (!isRetry) {
+        delete this.token
+        return this.rapidSearch(query, true)
+      } else {
+        throw err
+      }
+    }
   }
 
-  async multiInfo<T = ExampleMultiInfoResponse>(firmTaxNo: string) {
+  async multiInfo<T = ExampleMultiInfoResponse>(firmTaxNo: string, isRetry = false):Promise<T> {
     const token = await this.getToken()
-    return multiInfo<T>(firmTaxNo, token)
+    try {
+      return multiInfo<T>(firmTaxNo, token)
+    } catch (err) {
+      if (!isRetry) {
+        delete this.token
+        return this.multiInfo<T>(firmTaxNo, true)
+      } else {
+        throw err
+      }
+    }
   }
 }
